@@ -1,0 +1,38 @@
+
+body {
+    min-height: 100vh;
+}
+
+#gameconsole {
+    background-color: #e9452e;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#gameconsole > h1 {
+    font-family: 'Brush Script MT', 'Helvetica Neue', sans-serif;
+    color: #d6c577;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#container-left {
+    background-color: purple;
+}
+
+#container-right {
+    background: blanchedalmond;
+}
+
+
+.footer {
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
