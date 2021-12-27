@@ -27,6 +27,11 @@ JS File 1: Helper functions -> Functionalities
 - Clear:
 - Erase:
 - Change Grid Size: automatically clears/reset upon change
-- Grey Scale / Rainbow / 
+- Grey Scale / Rainbow 
 
 JS File 2: Main game file
+
+KEY TAKEAWAYS
+
+EXTRA CREDITS
+- CSS enhancements to 'Etch-a-sketch' font to make it look more realistic
