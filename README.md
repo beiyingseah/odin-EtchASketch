@@ -21,6 +21,7 @@ Part 2: CSS
 Part 3: Javascript - the UI
 Fundamentals
 - Create the 16x 16 square divs
+- Create a dynamic grid that changes based on user input
 - Set up a "hover" effect: grid divs change colour when browser registers a 'hover' event (addEventListener() to mark when mouse enters a div and leaves it): (i) add new class to the div OR (ii) change the div's background colour with JavaScript
 
 JS File 1: Helper functions -> Functionalities
@@ -33,5 +34,5 @@ JS File 2: Main game file
 
 KEY TAKEAWAYS
 
-EXTRA CREDITS
+EXTRA CREDIT
 - CSS enhancements to 'Etch-a-sketch' font to make it look more realistic
