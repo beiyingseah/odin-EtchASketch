@@ -28,7 +28,8 @@ JS File 1: Helper functions -> Functionalities
 - Clear:
 - Erase:
 - Change Grid Size: automatically clears/reset upon change
-- Grey Scale / Rainbow 
+- Grey Scale: progressively black by 10% till square turns black after 10 'mouseovers'
+- Rainbow 
 
 JS File 2: Main game file
 
