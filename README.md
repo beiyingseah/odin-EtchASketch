@@ -6,7 +6,6 @@ TODOs
 Part 1: HTML
 - Create a container to hold the 16x16 square divs 
 - Add footer to stamp creator info: "built by Bei Ying Seah"
-- Add a 'Pick your colour' button
 - Add a 'Classic' button: that changes colour of a square from white to grey to black, i.e. each hover adds another 10% of black  (opacity) to it so that only after 10 passes is the square completely black.
 - Add a 'Rainbow' button
 - Add a 'Clear' button
@@ -34,3 +33,5 @@ JS File: Helper functions -> Functionalities
 
 EXTRA CREDIT
 - CSS enhancements to 'Etch-a-sketch' font, game console (adding of shadows to create 3D-effect) and buttons to make it look more realistic (skeuomorphic)
+
+p.s. This project was birthed at the cusp of the start of 2022!! My final commit was pushed on 1 Jan 2022, 00000. I'm finally done with this project for now - happy 2022!!! (: 
