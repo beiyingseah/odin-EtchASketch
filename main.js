@@ -92,19 +92,18 @@ function activateButton(newMode) {
 function changeColor(e) {
     // Classic mode (Greyscale): shade turns 10% blacker and turning completely black when the 10th hover event is registered
     if (currentMode === 'classic') {
-        console.log('before', e.target.style.backgroundColor);
+        console.log('before', typeof e.target.style.backgroundColor);
         // if div's backgroundColor is currently already along the greyscale, continue from current opacity
-        if (e.target.style.backgroundColor.match(/rgba/) || (e.target.style.backgroundColor.match(/rgb(0, 0, 0)/))) {
+        if (e.target.style.backgroundColor.match(/rgba/)) {
             let currentOpacity = Number(e.target.style.backgroundColor.slice(-4,-1));
             console.log(currentOpacity);
-            if (currentOpacity <= 0.9) {
-                e.target.style.backgroundColor = `rgba(0, 0, 0, ${currentOpacity + 0.1})`;
-            }
-            else {
-                console.log('currentOpacity >= 0.9', e.target.style.backgroundColor);
-                return;
-            }
-        } else { // if div's backgroundColor is not currently along the greyscale, start from 0 opacity
+            e.target.style.backgroundColor = `rgba(0, 0, 0, ${currentOpacity + 0.1})`;
+        }
+        else if (e.target.style.backgroundColor === 'rgb(0, 0, 0)') {
+            console.log('currentOpacity >= 0.9', e.target.style.backgroundColor);
+            return;
+        }
+        else { // if div's backgroundColor is not currently along the greyscale, start from 0 opacity
             console.log('restarts the cycle');
             e.target.style.backgroundColor = 'rgba(0,0,0,0.1)';
         }
