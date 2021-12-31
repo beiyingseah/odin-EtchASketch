@@ -5,7 +5,7 @@ This is my fourth project for The Odin Project, where I apply my DOM manipulatio
 TODOs
 Part 1: HTML
 - Create a container to hold the 16x16 square divs 
-- Add footer to stamp creator info: "build by Bei Ying Seah"
+- Add footer to stamp creator info: "built by Bei Ying Seah"
 - Add a 'Pick your colour' button
 - Add a 'Classic' button: that changes colour of a square from white to grey to black, i.e. each hover adds another 10% of black  (opacity) to it so that only after 10 passes is the square completely black.
 - Add a 'Rainbow' button
