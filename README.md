@@ -1,6 +1,6 @@
 # odin-EtchASketch
 
-This is my fourth project for The Odin Project, where I apply my DOM manipulation skills (the very first time was for Project 3: implementing a basic UI for Rock, Paper, Scissors), alongside CSS and HTML to create something between a sketchpad and an Etch-A-Sketch.
+This is my fourth project for The Odin Project, where I apply my DOM manipulation skills (the very first time was for Project 3: implementing a basic UI for Rock, Paper, Scissor) alongside CSS and HTML to create something between a sketchpad and an Etch-A-Sketch.
 
 TODOs
 Part 1: HTML
@@ -24,16 +24,13 @@ Fundamentals
 - Create a dynamic grid that changes based on user input
 - Set up a "hover" effect: grid divs change colour when browser registers a 'hover' event (addEventListener() to mark when mouse enters a div and leaves it): (i) add new class to the div OR (ii) change the div's background colour with JavaScript
 
-JS File 1: Helper functions -> Functionalities
-- Clear:
-- Erase:
-- Change Grid Size: automatically clears/reset upon change
+JS File: Helper functions -> Functionalities
+- Clear
+- Erase
+- Grid Size control: automatically clears/reset upon change
 - Grey Scale: progressively black by 10% till square turns black after 10 'mouseovers'
 - Rainbow 
 
-JS File 2: Main game file
-
-KEY TAKEAWAYS
 
 EXTRA CREDIT
-- CSS enhancements to 'Etch-a-sketch' font to make it look more realistic
+- CSS enhancements to 'Etch-a-sketch' font, game console (adding of shadows to create 3D-effect) and buttons to make it look more realistic (skeuomorphic)

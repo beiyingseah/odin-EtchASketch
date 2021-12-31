@@ -15,6 +15,7 @@ body {
     justify-content: center;
     background-color: #e9452e;
     box-shadow: 
+    3px 0px hsl(7, 81%, 60%),
     10px 10px hsl(7, 81%, 50%),
     10px 10px 3px #e73018,
     25px 25px hsl(7, 81%, 30%);
@@ -26,6 +27,9 @@ body {
 
 #gameconsole > h1 {
     font-family: 'Brush Script MT', 'Helvetica Neue', sans-serif;
+    text-shadow: 
+    1px 2px 0px hsl(49, 54%, 40%),
+    0px 3px 2px hsl(49, 54%, 30%);
     font-size: 45px;
     text-align: center;
     margin: 0;
@@ -121,6 +125,7 @@ input[type=range]::-webkit-slider-runnable-track {
     height: 21px;
     cursor: pointer;
     background: #fefefe;
+    box-shadow: 0px 4px 6px rgb(107, 107, 107) inset;
     border-radius: 10px;
     border: 1px solid #D9D9D9;
   }
