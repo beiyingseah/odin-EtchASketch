@@ -1,4 +1,3 @@
-
 // Default settings
 const DEFAULT_SIZE = 16;
 const DEFAULT_MODE = 'classic';
@@ -65,11 +64,9 @@ function setupGrid(sizeValue) {
     for (let i = 0; i < sizeValue * sizeValue; i++) {
         const cell = document.createElement('div');
         cell.setAttribute('style', 'border: 1px solid rgb(0, 0, 0)');
-        //cell.addEventListener('mouseover', changeColor)
-        //insert cell.SetAttribute: background colour
+        cell.addEventListener('mouseover', changeColor);
         grid.appendChild(cell);
       }
-
 }
 
 /* COLOUR BUTTONS INTERACTIVITY */
@@ -90,13 +87,46 @@ function activateButton(newMode) {
         eraserBtn.classList.add('active');
     }
 }
-//function changeColor()
+
+
+function changeColor(e) {
+    // Classic mode (Greyscale): shade turns 10% blacker and turning completely black when the 10th hover event is registered
+    if (currentMode === 'classic') {
+        console.log('before', e.target.style.backgroundColor);
+        // if div's backgroundColor is currently already along the greyscale, continue from current opacity
+        if (e.target.style.backgroundColor.match(/rgba/) || (e.target.style.backgroundColor.match(/rgb(0, 0, 0)/))) {
+            let currentOpacity = Number(e.target.style.backgroundColor.slice(-4,-1));
+            console.log(currentOpacity);
+            if (currentOpacity <= 0.9) {
+                e.target.style.backgroundColor = `rgba(0, 0, 0, ${currentOpacity + 0.1})`;
+            }
+            else {
+                console.log('currentOpacity >= 0.9', e.target.style.backgroundColor);
+                return;
+            }
+        } else { // if div's backgroundColor is not currently along the greyscale, start from 0 opacity
+            console.log('restarts the cycle');
+            e.target.style.backgroundColor = 'rgba(0,0,0,0.1)';
+        }
+        console.log('after', e.target.style.backgroundColor);
+    }
+    
+    else if (currentMode === 'rainbow') {
+        const randomR = Math.floor(Math.random() * 256);
+        const randomG = Math.floor(Math.random() * 256);
+        const randomB = Math.floor(Math.random() * 256);
+        e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
+    }
+
+    else if (currentMode === 'eraser') {
+        e.target.style.backgroundColor = '#fefefe';
+    }
+}
+
 
 
 // MAIN
 setupGrid(DEFAULT_SIZE)
 activateButton(DEFAULT_MODE)
 //Display the default slider value + default grid size
-
-
 

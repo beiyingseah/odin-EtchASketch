@@ -27,6 +27,8 @@ body {
     margin: 0;
 }
 
+/* BUTTONS */
+
 button {
     padding: 10px 15px;
     font-size: 20px;
@@ -43,6 +45,11 @@ button {
 }
  
 button.active {
+    box-shadow: 0 5px #666;
+    transform: translateY(5px);
+}
+
+#clearBtn:active {
     box-shadow: 0 5px #666;
     transform: translateY(5px);
 }
@@ -94,6 +101,8 @@ button.active {
     text-align: center;
 }
 
+
+/* RANGE SLIDER */
 input[type=range] {
     -webkit-appearance: none; /* overrides the basic/default appearance */
     cursor: pointer;
