@@ -63,7 +63,7 @@ function setupGrid(sizeValue) {
     // Create a dynamic grid of square divs
     for (let i = 0; i < sizeValue * sizeValue; i++) {
         const cell = document.createElement('div');
-        cell.setAttribute('style', 'border: 1px solid rgb(0, 0, 0)');
+        cell.setAttribute('style', 'rgb(0, 0, 0)');
         cell.addEventListener('mouseover', changeColor);
         grid.appendChild(cell);
       }
@@ -92,11 +92,11 @@ function activateButton(newMode) {
 function changeColor(e) {
     // Classic mode (Greyscale): shade turns 10% blacker and turning completely black when the 10th hover event is registered
     if (currentMode === 'classic') {
-        console.log('before', typeof e.target.style.backgroundColor);
         // if div's backgroundColor is currently already along the greyscale, continue from current opacity
         if (e.target.style.backgroundColor.match(/rgba/)) {
-            let currentOpacity = Number(e.target.style.backgroundColor.slice(-4,-1));
-            console.log(currentOpacity);
+            let splitRgbaValues = e.target.style.backgroundColor.split(',');
+            let opacityArray = splitRgbaValues[3].split(")");
+            let currentOpacity = Number(opacityArray[0]);
             e.target.style.backgroundColor = `rgba(0, 0, 0, ${currentOpacity + 0.1})`;
         }
         else if (e.target.style.backgroundColor === 'rgb(0, 0, 0)') {
@@ -104,10 +104,8 @@ function changeColor(e) {
             return;
         }
         else { // if div's backgroundColor is not currently along the greyscale, start from 0 opacity
-            console.log('restarts the cycle');
             e.target.style.backgroundColor = 'rgba(0,0,0,0.1)';
         }
-        console.log('after', e.target.style.backgroundColor);
     }
     
     else if (currentMode === 'rainbow') {
@@ -118,7 +116,7 @@ function changeColor(e) {
     }
 
     else if (currentMode === 'eraser') {
-        e.target.style.backgroundColor = '#fefefe';
+        e.target.style.backgroundColor = '#f7f1e6';
     }
 }
 
