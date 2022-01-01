@@ -34,4 +34,4 @@ JS File: Helper functions -> Functionalities
 EXTRA CREDIT
 - CSS enhancements to 'Etch-a-sketch' font, game console (adding of shadows to create 3D-effect) and buttons to make it look more realistic (skeuomorphic)
 
-p.s. This project was birthed at the cusp of the start of 2022!! My final commit was pushed on 1 Jan 2022, 00000. I'm finally done with this project for now - happy 2022!!! (: 
+p.s. This project was birthed at the cusp of the start of 2022!! My final commit was pushed on 1 Jan 2022, just as the clock struck 12. And who else to accompany me but Sprouty, my most steadfast companion. I'm finally done with this project for now - happy 2022!!! (: 
